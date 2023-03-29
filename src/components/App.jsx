@@ -1,16 +1,19 @@
-export const App = () => {
+import Profile from "./profile/Profile";
+import data from './profile/user.json'
+
+export default function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+    <div>
+      {data.map(data =>
+        <Profile
+          key={data.tag}
+          avatar={data.avatar}
+          name={data.username}
+          tag={data.tag}
+          location={data.location}
+          followers={data.stats.followers}
+          views={data.stats.views}
+          likes={data.stats.likes}
+        />)}
+  </div>)
+}
