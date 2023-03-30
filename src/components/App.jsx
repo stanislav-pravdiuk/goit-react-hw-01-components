@@ -1,19 +1,22 @@
 import Profile from "./profile/Profile";
-import data from './profile/user.json'
+import user from './profile/user.json'
+import Statistics from "./statistics/Statistics";
+import data from './statistics/data.json'
 
 export default function App() {
   return (
     <div>
-      {data.map(data =>
-        <Profile
-          key={data.tag}
-          avatar={data.avatar}
-          name={data.username}
-          tag={data.tag}
-          location={data.location}
-          followers={data.stats.followers}
-          views={data.stats.views}
-          likes={data.stats.likes}
-        />)}
-  </div>)
+      {<Profile
+          key={user.tag}
+          avatar={user.avatar}
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          stats={user.stats}
+        />}
+      {<Statistics
+          stats={data}
+        />}
+    </div>
+  )
 }
