@@ -7,7 +7,6 @@ export default function StatisticsList({ items }) {
             {items.map(item => (
                 <li key={item.id} className="item">
                     <StatisticsItem
-                        title={item.title}
                         stats={item}
                     />
                 </li>

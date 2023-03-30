@@ -1,25 +1,26 @@
 import Profile from "./profile/Profile";
-import user from './profile/user.json'
+import Section from "./statistics/Section";
 import StatisticsList from "./statistics/StatisticsList";
-import data from './statistics/data.json'
+import user from './profile/user.json';
+import data from './statistics/data.json';
 
 export default function App() {
   return (
     <div>
-      {<Profile
+      <Profile
         key={user.tag}
         avatar={user.avatar}
         username={user.username}
         tag={user.tag}
         location={user.location}
         stats={user.stats}
-      />}
-      {<section className="statistics">
+      />
+      <Section>
         <StatisticsList
           items={data}
         />
-      </section>}
-      </div>
+      </Section>
+      
+    </div>
   )
-}
-
+} 
