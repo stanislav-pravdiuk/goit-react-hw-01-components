@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
-import StatisticsItem from "./StatisticsItem"
+import StatisticsItem from "./StatisticsItem";
+import css from './statistics.module.css';
+// import color from './getRandomHexColor';
 
 export default function StatisticsList({ items }) {
     return (
-        <ul className="stat-list">
+        <ul className={css.stat__list}>
             {items.map(item => (
                 <li key={item.id} className="item">
                     <StatisticsItem

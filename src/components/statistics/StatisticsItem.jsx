@@ -1,4 +1,4 @@
-
+import css from './statistics.module.css'
 import PropTypes from 'prop-types';
 
 export default function StatisticsItem(props) {
@@ -7,8 +7,9 @@ export default function StatisticsItem(props) {
   } = props
   return (
       <div>
-        <span className="label">{stats.label} </span>
-        <span className="percentage">{stats.percentage}%</span>
+        <span className={css.label}>{stats.label} </span>
+        <br></br>
+        <span className={css.percentage}>{stats.percentage}%</span>
       </div>
     )
 }

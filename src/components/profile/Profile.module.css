@@ -1,0 +1,44 @@
+.description {
+    background-color: rgb(151, 151, 151);
+    width: 600px;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.name {
+    color: black;
+    font-weight: 700;
+}
+
+.tag {
+    color: rgba(0, 0, 0, 0.411);
+}
+
+.location {
+    color: rgba(0, 0, 0, 0.411);
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    background-color: rgb(151, 151, 151);   
+}
+
+.label {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+

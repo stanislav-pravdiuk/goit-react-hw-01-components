@@ -1,0 +1,27 @@
+
+.stat__list {
+    background-color: rgb(151, 151, 151);
+    /* text-align: center; */
+    width: 600px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.item {
+
+}
+
+.label {
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.percentage {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
