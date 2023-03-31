@@ -1,8 +1,10 @@
 import Profile from "./profile/Profile";
 import Section from "./statistics/Section";
 import StatisticsList from "./statistics/StatisticsList";
+import FriendList from "./friendList/FriendList";
 import user from './profile/user.json';
 import data from './statistics/data.json';
+import friends from './friendList/friends.json'
 
 export default function App() {
   return (
@@ -15,12 +17,16 @@ export default function App() {
         location={user.location}
         stats={user.stats}
       />
+
       <Section>
         <StatisticsList
           items={data}
         />
       </Section>
-      
+
+      <FriendList
+        friends={friends}
+      />
     </div>
   )
 } 
