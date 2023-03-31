@@ -2,9 +2,11 @@ import Profile from "./profile/Profile";
 import Section from "./statistics/Section";
 import StatisticsList from "./statistics/StatisticsList";
 import FriendList from "./friendList/FriendList";
+import TransactionHistory from "./transactionHistory/TransactionHistory";
 import user from './profile/user.json';
 import data from './statistics/data.json';
-import friends from './friendList/friends.json'
+import friends from './friendList/friends.json';
+import transactions from './transactionHistory/transactions.json';
 
 export default function App() {
   return (
@@ -27,6 +29,10 @@ export default function App() {
       <FriendList
         friends={friends}
       />
+
+      <TransactionHistory
+        props={transactions}
+      />
     </div>
   )
-} 
+}

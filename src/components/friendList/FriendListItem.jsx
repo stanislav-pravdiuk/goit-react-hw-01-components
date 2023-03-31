@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function FriendListItem(props) {
+function FriendListItem({ props }) {
     const {
         avatar,
         name,

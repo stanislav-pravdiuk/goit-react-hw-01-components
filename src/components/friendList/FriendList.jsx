@@ -4,7 +4,7 @@ import FriendListItem from './FriendListItem';
 function FriendList({ friends }) {
     return (
         <ul className="friend-list">
-            {friends.map(friend => (
+            {friends.map(friend => ( 
                 <li key={friend.id} className="item">
                     <FriendListItem
                         props={friend}
@@ -12,7 +12,7 @@ function FriendList({ friends }) {
                 </li>
             ))}
         </ul>
-    )
+    ) 
 }
 
 FriendList.protoTypes = {
@@ -22,3 +22,4 @@ FriendList.protoTypes = {
 }
 
 export default FriendList
+

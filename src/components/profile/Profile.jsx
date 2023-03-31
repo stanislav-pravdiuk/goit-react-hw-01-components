@@ -23,7 +23,7 @@ export default function Profile(props) {
     <ul className="stats">
       <li>
         <span className="label">Followers </span>
-        <span className="`quantity">{stats.followers}</span>
+        <span className="quantity">{stats.followers}</span>
       </li>
       <li>
         <span className="label">Views </span>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export default function StatisticsItem(props) {
     const {
       stats
-    } = props
+  } = props
   return (
       <div>
         <span className="label">{stats.label} </span>
