@@ -1,4 +1,12 @@
 
+.title {
+    text-align: center;
+    width: 600px;
+    background-color: rgb(151, 151, 151);
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
 .stat__list {
     background-color: rgb(151, 151, 151);
     /* text-align: center; */
