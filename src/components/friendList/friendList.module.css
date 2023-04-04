@@ -13,8 +13,14 @@
    justify-content: center;
 }
 
-.status {
+.true {
     font-size: 20px;
+    color: rgb(19, 255, 19);
+}
+
+.false {
+    font-size: 20px;
+    color: rgb(255, 29, 29);
 }
 
 .name {

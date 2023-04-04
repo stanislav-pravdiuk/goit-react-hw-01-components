@@ -7,13 +7,14 @@ export default function StatisticsList({ items }) {
     return (
         <ul className={css.stat__list}>
             {items.map(item => (
-                <li key={item.id} className={css.item}
+                <li
+                    key={item.id}
+                    className={css.item}
                     style={{
-        margin: 8,
-        borderRadius: 4,
+                        margin: 8,
+                        borderRadius: 4,
                         backgroundColor: color(),
-        
-      }}>
+                    }}>
                     <StatisticsItem
                         stats={item}
                     />
