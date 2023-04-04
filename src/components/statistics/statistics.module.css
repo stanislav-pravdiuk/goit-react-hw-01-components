@@ -9,15 +9,15 @@
 
 .stat__list {
     background-color: rgb(151, 151, 151);
-    /* text-align: center; */
     width: 600px;
     display: flex;
     justify-content: center;
-
+    padding-bottom: 30px;
 }
 
-.item {
-
+.item div {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .label {
@@ -30,6 +30,5 @@
     color: white;
     display: flex;
     justify-content: center;
-    font-weight: 600;
-    padding-bottom: 50px;
+    font-weight: 600;    
 }
