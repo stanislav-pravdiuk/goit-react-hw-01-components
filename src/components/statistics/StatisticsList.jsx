@@ -3,29 +3,35 @@ import StatisticsItem from "./StatisticsItem";
 import css from './statistics.module.css';
 import color from './getRandomHexColor';
 
-export default function StatisticsList({ items }) {
+export default function StatisticsList({ stats, title }) {
     return (
-        <ul className={css.stat__list}>
-            {items.map(item => (
-                <li
-                    key={item.id}
-                    className={css.item}
-                    style={{
-                        margin: 8,
-                        borderRadius: 4,
-                        backgroundColor: color(),
-                    }}>
+        <div>
+            {title && <h2 className={css.title}>{title}</h2>}
+            <ul className={css.stat__list}>
+                {stats.map(item => (
+                    <li
+                        key={item.id}
+                        className={css.item}
+                        style={{
+                            margin: 8,
+                            borderRadius: 4,
+                            backgroundColor: color(),
+                        }}>
                     <StatisticsItem
                         stats={item}
                     />
                 </li>
             ))}
-        </ul>
+            </ul>
+        </div>
     )
 }
 
 StatisticsList.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.string.isRequired
-    }))
+    stats: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        parcentage: PropTypes.number.isRequired
+    }),
+    title: PropTypes.string
 }

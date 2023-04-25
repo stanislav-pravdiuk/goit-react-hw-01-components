@@ -1,5 +1,4 @@
 import Profile from "./profile/Profile";
-import Section from "./statistics/Section";
 import StatisticsList from "./statistics/StatisticsList";
 import FriendList from "./friendList/FriendList";
 import TransactionHistory from "./transactionHistory/TransactionHistory";
@@ -20,12 +19,11 @@ export default function App() {
         stats={user.stats}
       />
 
-      <Section>
         <StatisticsList
-          items={data}
-        />
-      </Section>
-
+          stats={data}
+          title="Title"
+      />
+      
       <FriendList
         friends={friends}
       />
