@@ -5,7 +5,7 @@ import color from './getRandomHexColor';
 
 export default function StatisticsList({ stats, title }) {
     return (
-        <div>
+        <div className={css.statistics}>
             {title && <h2 className={css.title}>{title}</h2>}
             <ul className={css.stat__list}>
                 {stats.map(item => (
@@ -13,8 +13,6 @@ export default function StatisticsList({ stats, title }) {
                         key={item.id}
                         className={css.item}
                         style={{
-                            margin: 8,
-                            borderRadius: 4,
                             backgroundColor: color(),
                         }}>
                     <StatisticsItem

@@ -1,11 +1,18 @@
-.description {
-    background-color: rgb(151, 151, 151);
+.profile {
     width: 600px;
+    margin-bottom: 50px;
+}
+
+.description {
+    background-color: rgb(255, 255, 255);
     text-align: center;
+    border: 2px solid rgba(161, 161, 161, 0.39);
+    border-radius: 7px 7px 0px 0px;
 }
 
 .avatar {
     border-radius: 50%;
+    width: 200px;
 }
 
 .name {
@@ -25,20 +32,32 @@
 
 .stats {
     display: flex;
-    width: 600px;
-    justify-content: center;
-    background-color: rgb(151, 151, 151);   
+    justify-content: space-between;
+    background-color: rgb(233, 229, 229); 
+    border: 2px solid rgba(161, 161, 161, 0.39);
+    border-top: 0px;
+    border-radius: 0px 0px 7px 7px;
+
+}
+
+.element {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.element:nth-child(2n) {
+    border-left: 2px solid rgba(161, 161, 161, 0.39);
+    border-right: 2px solid rgba(161, 161, 161, 0.39);
 }
 
 .label {
-margin-left: 50px;
-margin-right: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .quantity {
     display: flex;
     justify-content: center;
     font-weight: 600;
-    padding-bottom: 50px;
 }
 

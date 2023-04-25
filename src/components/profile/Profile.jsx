@@ -9,7 +9,7 @@ export default function Profile(props) {
     location,
     stats } = props
   return (
-  <div className="profile">
+  <div className={css.profile}>
     <div className={css.description}>
       <img
         src={avatar}
@@ -22,17 +22,17 @@ export default function Profile(props) {
     </div>
 
       <ul className={css.stats}>
-      <li>
+      <li className={css.element}>
           <span className={css.label}>Followers </span>
         <br></br>
           <span className={css.quantity}>{stats.followers}</span>
       </li>
-      <li>
+      <li className={css.element}>
         <span className={css.label}>Views </span>
         <br></br>
         <span className={css.quantity}>{stats.views}</span>
       </li>
-      <li>
+      <li className={css.element}>
         <span className={css.label}>Likes </span>
         <br></br>
         <span className={css.quantity}>{stats.likes}</span>

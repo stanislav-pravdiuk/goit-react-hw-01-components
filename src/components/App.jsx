@@ -1,15 +1,16 @@
 import Profile from "./profile/Profile";
-import StatisticsList from "./statistics/StatisticsList";
+import Statistics from "./statistics/Statistics";
 import FriendList from "./friendList/FriendList";
 import TransactionHistory from "./transactionHistory/TransactionHistory";
 import user from './profile/user.json';
 import data from './statistics/data.json';
 import friends from './friendList/friends.json';
 import transactions from './transactionHistory/transactions.json';
+import css from './app.module.css'
 
 export default function App() {
   return (
-    <div>
+    <div className={css.container}>
       <Profile
         key={user.tag}
         avatar={user.avatar}
@@ -19,9 +20,9 @@ export default function App() {
         stats={user.stats}
       />
 
-        <StatisticsList
+        <Statistics
           stats={data}
-          title="Title"
+          title="Upload stats"
       />
       
       <FriendList
